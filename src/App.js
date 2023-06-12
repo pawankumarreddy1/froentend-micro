@@ -4,7 +4,7 @@ function App() {
   const [studentTable, setStudentTable] = useState('');
 
   const handleClick = async () => {
-    const response = await fetch("backend url");
+    const response = await fetch("http://52.221.183.45:1002/");
     const result = await response.text();
     setStudentTable(result);
   };
